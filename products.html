@@ -21,8 +21,6 @@
         
         <!-- Extra plugin css -->
         <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-        <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
-        
         
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
@@ -48,11 +46,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item dropdown submenu">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Blog
@@ -74,60 +72,33 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
-                    <h2>Portfolio</h2>
-                    <p>See our best work</p>
+                    <h2>Products</h2>
                 </div>
             </div>
         </section>
         <!--================End Banner Area =================-->
-        
-        <!--================Portfolio Area =================-->
-        <section class="portfolio_area">
+    
+        <!--================Feature Area =================-->
+        <section class="feature_area">
             <div class="container">
-                <div class="portfolio_filter">
-                    <ul>
-                        <li class="active" data-filter="*"><a href="#">All</a></li>
-                        <li data-filter=".brand"><a href="#">Brand identity</a></li>
-                        <li data-filter=".design"><a href="#">Design</a></li>
-                        <li data-filter=".arc"><a href="#">Architecture</a></li>
-                        <li data-filter=".photo"><a href="#">Photography</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ms_portfolio_inner">
-                <div class="ms_p_item wd_25 brand arc photo">
-                    <img src="img/portfolio/ms-portfolio/ms-p-1.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 brand arc photo">
-                    <img src="img/portfolio/ms-portfolio/ms-p-2.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_50 brand">
-                    <img src="img/portfolio/ms-portfolio/ms-p-3.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 brand arc photo">
-                    <img src="img/portfolio/ms-portfolio/ms-p-4.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 brand arc photo">
-                    <img src="img/portfolio/ms-portfolio/ms-p-5.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_50">
-                    <img src="img/portfolio/ms-portfolio/ms-p-6.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 design arc">
-                    <img src="img/portfolio/ms-portfolio/ms-p-7.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 design arc">
-                    <img src="img/portfolio/ms-portfolio/ms-p-8.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 design arc">
-                    <img src="img/portfolio/ms-portfolio/ms-p-9.jpg" alt="">
-                </div>
-                <div class="ms_p_item wd_25 design arc">
-                    <img src="img/portfolio/ms-portfolio/ms-p-10.jpg" alt="">
+                <div class="row feature_inner">
+                    <div id="product-container"></div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-1.png" alt="">
+                            </div>
+                            <h4>Products</h4>
+                            <form id="product-search">
+                                <input type="text" id="search" name="search" placeholder="Search..." autocomplete="off" />
+                                <button type="submit">Enter</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--================End Portfolio Area =================-->
+        <!--================End Feature Area =================-->
         
         <!--================Footer Area =================-->
         <footer class="footr_area">
@@ -195,9 +166,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </footer>
         <!--================End Footer Area =================-->
         
-        
-        
-        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-3.2.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -220,12 +188,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
         <script src="js/smoothscroll.js"></script>
-        <script src="vendors/circle-bar/circle-progress.min.js"></script>
-        <script src="vendors/circle-bar/plugins.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
         
-        <script src="js/circle-active.js"></script>
         <script src="js/theme.js"></script>
+        
+        <!-- Custom js -->
+        <script src="js/products.js"></script>
     </body>
 </html>
